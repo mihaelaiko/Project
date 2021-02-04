@@ -1,0 +1,416 @@
+
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 88%;
+    
+}
+
+.container{
+    /* position: relative; */
+    background-image: url('../images/1.texture.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+
+}
+
+nav{
+    position: fixed;
+    height: 50%;
+    left: 25%; top: 3%; bottom: 20%; right: 15%; 
+}
+
+ul,li,a{
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+
+
+nav>ul>li{
+   text-align: center;
+   padding: 0 0.1rem;
+    float: left;
+    margin-right: 5em;
+    font-size: 1.5em;
+    border: 3px solid black;
+    
+    
+}
+
+nav>ul>.inspectors{
+    color:white;
+    background-color:blue;
+    
+}
+nav>ul>.inspectors>a:visited{
+    color:white;
+   
+    
+}
+
+nav>ul>.inspectors:hover{
+    color:blue;
+    background-color:white;
+    
+}
+
+nav>ul>.inspectors>a:hover{
+    color:blue;
+    background-color:white;
+    
+}
+nav>ul>.backstage{
+    color:blue;
+    background-color:white;
+    
+}
+
+
+nav>ul>.backstage>a:visited{
+    color:blue;
+    background-color:white;
+    
+}
+nav>ul>.backstage:hover{
+    color:white;
+    background-color:blue;
+    
+}
+nav>ul>.backstage>a:hover{
+    color:white;
+    background-color:blue;
+    
+}
+
+nav>ul>.jobs{
+    color: white;
+    background-color: black;
+}
+nav>ul>.jobs>a:visited{
+    color: white;
+    background-color:black;
+
+}
+nav>ul>.jobs:hover{
+    color: black;
+    background-color: white;
+}
+nav>ul>.jobs>a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.clearfix{
+    clear: both;
+    
+}
+
+.about{
+    position: fixed;
+    top: 3em; left:3em;
+    font-size: 1.5em;
+    color: black;
+    transform:rotate(25deg)
+    
+}
+
+.about>a:visited{
+    color: black;
+}
+
+  .contacts{
+    position: absolute;
+    top: 84%; left:1.5em;
+    font-size: 1.5em;
+    color: black;
+    transform:rotate(-12deg)
+    
+    
+}
+
+.contacts>a:visited{
+    color: black;
+}  
+
+/* nav > ul > li > ul {
+    display: none;
+}
+nav > ul > li>a:hover{
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+nav > ul > li:hover > ul {
+    display: block;
+    text-align: left; 
+    padding: 0; 
+    color: blue;
+    background-color: white;
+
+}   
+nav > ul > li:hover > ul > li {
+    border: 1px solid black;
+    
+
+}   
+nav > ul > li:hover > ul > li:hover {
+    color:white;
+    background-color:blue;
+
+    
+
+}   
+
+nav > ul > li:hover > ul > li>a{
+    color: blue;
+    background-color: white;
+}   
+nav > ul > li:hover > ul > li>a:visited{
+    color: blue;
+    background-color: white;
+}
+nav > ul > li:hover > ul > li>a:hover:visited{
+    background-color: blue;
+    color: white;
+}    */
+
+a>.hand{
+    position: absolute;
+    height: 52%;
+    left: 45%; top: 24%; bottom: 20%; right: 30%;
+    
+}
+    
+.hand:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+
+
+      
+      .hello{
+          position: relative;
+          width: 100vw;
+          top:91%;
+          background-color: white;
+          border:3px solid blue;
+          box-sizing: border-box ;
+         
+        
+      }
+
+      .animated{
+        height: 40px;
+        position: relative;
+        color: black;
+        font-size: 1.5em;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+    
+        
+      }
+      .hello>.animated>p{
+          width: 250%;
+          position: absolute;
+          font-size: 1em;
+
+          margin: 0.2em;
+          transform:translateX(100%);
+          animation: moving 50s linear infinite;
+      }
+
+      @keyframes moving{
+          0%{
+              transform: translateX(0%);
+            }
+        100%{
+            transform: translateX(-50%);
+            }
+      }
+
+
+      @media only screen and (max-width: 1300px){
+
+        .container{
+            position: fixed;
+            background-image: url('../images/1.texture.png');
+            height: 100vh;
+            width: 120vw;
+            overflow: hidden;
+            background-size: 100% 100%;
+        
+        }
+
+        nav{
+            position: fixed;
+            height: 50%;
+            left: 33%; top: 3%; bottom: 20%;  
+        }
+
+        nav>ul>li{
+            text-align: center;
+            padding: 0 0.1em;
+             float: left;
+             margin-right: 2.7em;
+             font-size: 1.5em;
+             border: 3px solid black;
+             
+             
+         }
+      }
+
+
+      @media only screen and (max-width: 1285px){
+
+        .container{
+            position: fixed;
+            background-image: url('../images/1.texture.png');
+            height: 100vh;
+            width: 120vw;
+            overflow: hidden;
+            background-size: 100% 100%;
+        
+        }
+
+        nav{
+            position: fixed;
+            height: 50%;
+            left: 35%; top: 3%; bottom: 20%;  
+        }
+
+        nav>ul>li{
+            text-align: center;
+            padding: 0 0.1em;
+             float: left;
+             margin-right: 2em;
+             font-size: 1.5em;
+             border: 3px solid black;
+             
+             
+         }
+      }
+
+
+
+      @media only screen and (max-width: 1250px){
+
+        .container{
+            position: fixed;
+            background-image: url('../images/1.texture.png');
+            height: 100vh;
+            width: 130vw;
+            margin-right: 10%;
+            overflow: hidden;
+            background-size: 100% 100%;
+        
+        }
+
+        nav{
+            position: fixed;
+            height: 50%;
+            left: 30%; top: 3%; bottom: 20%;  
+        }
+
+        nav>ul>li{
+            text-align: center;
+            padding: 0 0.1em;
+             float: left;
+             margin-right: 2em;
+             font-size: 1.5em;
+             border: 3px solid black;
+             
+             
+         }
+         a>.hand{
+            position: absolute;
+            height: 52%;
+            left: 42%; top: 24%; bottom: 20%; right: 30%;
+            
+        }
+      }
+      @media only screen and (max-width: 1250px){
+
+        .container{
+            position: fixed;
+            background-image: url('../images/1.texture.png');
+            height: 100vh;
+            width: 150vw;
+            margin-right: 30%;
+            overflow: hidden;
+            background-size: 100% 100%;
+        
+        }
+
+        nav{
+            position: fixed;
+            height: 50%;
+            left: 35%; top: 3%; bottom: 20%;  
+        }
+
+        nav>ul>li{
+            text-align: center;
+            padding: 0 0.1em;
+             float: left;
+             margin-right: 1.5em;
+             font-size: 1.3em;
+             border: 3px solid black;
+             
+             
+         }
+         a>.hand{
+            position: absolute;
+            height: 50%;
+            left: 36%; top: 24%; bottom: 20%; right: 30%;
+            
+        }
+      }
+
+
+
+/* .noise{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('../images/unnamed.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    animation: noise .5s steps(10) infinite;
+}
+
+
+@keyframes noise {
+    0% { background-position: 0 0;}
+    50% { background-position: 100% 100% }
+}
+ */
+
+

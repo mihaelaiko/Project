@@ -1,0 +1,727 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 88%;
+    opacity: 0;
+    transition: opacity 3s;
+   
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.scrolldown{
+    position: absolute;
+    bottom: -2em;
+    left: 52%;
+    width: 2em;
+    height: 2em;
+    transform: translateY(-80px) translateX(-50%)
+    rotate(45deg);
+}
+.scrolldown span{
+    position:absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0;
+}
+
+@keyframes animate{
+    0%
+    {
+        top:-5px;
+        left: -5px;
+        opacity:0;
+    
+    }
+    25%
+    {
+        top:0;
+        left: 0;
+        opacity:1;
+    
+    }
+    50%,100%
+    {
+        top:5px;
+        left: 5px;
+        opacity:0;
+    
+    }
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    width: 4em;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: blue;
+    cursor: pointer;
+    padding: 1.2em;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: white;
+  }
+  
+  #topBtn:hover {
+    background-color: blue;
+    color: white;
+  }
+
+.content{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.homebutton{
+    position: relative;
+    top:1em;
+}
+.homebutton>a>img{
+    position: absolute;
+    left: 2%; top: 5%;
+    width: 2%;
+  z-index: 101;
+
+}
+
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+main>.background{
+    position: absolute;
+    width: 99%;
+    height: 100vh;
+    
+}
+
+/* .outcomes>img{
+    height:100%;
+    position: fixed;
+    right: 0;
+    
+    
+}  */
+
+.findings{
+    height: 100vh;
+    width: 90vh;
+    position: absolute;
+    right: 0;
+    
+} 
+.findings>img{
+    height:100%;
+    position: absolute;
+    right: 0;
+    
+} 
+
+.findings>.out{
+    height:100%;
+    position: absolute;
+    right: 0%;
+    
+} 
+.findings>.find{
+    height:100%;
+    position: absolute;
+    right: 0%;
+    
+} 
+/* .buttons{
+    position: absolute;
+    width: 100%;height: 100%;
+    transform: rotate(90deg); 
+    color: blue; 
+    font-size: 1.3em;
+} */
+
+.buttons>a{
+
+    position: absolute;
+    width: 7em;
+    right: 0;
+    transform: rotate(90deg);
+    color: blue;
+    padding-left:0.2em;
+    background-color: white;
+    border:1px solid blue;
+    top:10%;
+    font-size: 1.3em;
+}
+.buttons>.insp{
+   left: 86.7%;
+    
+}
+
+.buttons>.find{
+   
+    left: 90.5%;
+    
+   
+    
+}
+.buttons>.out{
+    
+    left:94%;
+    
+   
+    
+}
+.mapContainer{
+    position: absolute;
+    /* top: 100vh; */
+    width: 100%;
+    
+}
+
+.mapContainer>img{
+    /* position: absolute; */
+    top: 100vh;
+    width: 100%;
+  
+    
+   
+}
+.mapContainer>p{
+    position: absolute;
+    top: 1.5em;left: 1em;
+    
+    font-size: 1em;
+    margin: 0 auto;
+    color: blue;
+    overflow: hidden;
+  
+   
+}
+
+.mapContainer>.europe{
+    position: absolute;
+    top: 4em;left: 8em;
+    height: 1.7em;
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding-left: 0.5em;  padding-right: 0.5em;
+    color: #00FF00;
+    background-color: blue;
+    
+  
+   
+}
+
+.mapContainer>.asia{
+    position: absolute;
+    top: 60em;left: 6em;
+    height: 0.9em;
+    font-size: 1.7em;
+    margin: 0 auto;
+    padding-left: 1.2em;  padding-right: 1.2em; padding-bottom: 0.8em;
+    color: blue;
+    background-color: #00ffff;
+    
+  
+   
+}
+
+.littlemap{
+    position:absolute;
+    left:30%;right: 30%;
+    top:42%
+}
+.littlemap>img{
+  width: 100%;
+}
+
+
+.smallThomas{
+    display: block;
+    position:absolute;
+    left: 45%;top:26.2%;
+}
+.smallThomas:hover{
+    display: block;
+    position:absolute;
+    left: 45%;top:26.2%;
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes move {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.smallThomas>#smallthomas{
+    width: 80%;
+    
+}
+.bigThomas{
+    display: none;
+    position:absolute;
+    left: 45%;top:21%;
+}
+
+.bigThomas>img{
+    width: 40%;
+    
+}
+
+
+.smallJanpng{
+    display: block;
+    position:absolute;
+    left: 44%;top:26.2%;
+}
+
+.smallJanpng:hover{
+    display: block;
+    position:absolute;
+    left: 44%;top:26.2%;
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.smallJanpng>img{
+    width: 80%;
+}
+.bigJanpng{
+    display: none;
+    position:absolute;
+    left: 34%;top:20%;
+}
+
+.bigJanpng>img{
+    width: 40%;
+    
+}
+
+.smallRali{
+    display: block;
+    position:absolute;
+    left: 55%;top:32%;
+}
+
+.smallRali:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallRali>img{
+    width: 80%;
+}
+.bigRali{
+    display: none;
+    position:absolute;
+    left: 54%;top:28%;
+}
+
+.bigRali>img{
+    width: 40%;
+    
+}
+
+.smallMariana{
+    display: block;
+    position:absolute;
+    left: 27%;top:32%;
+}
+
+.smallMariana:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallMariana>img{
+    width: 80%;
+}
+.bigMariana{
+    display: none;
+    position:absolute;
+    left: 23%;top:29%;
+}
+
+.bigMariana>img{
+    width: 40%;
+    
+}
+
+.smallOla{
+    display: block;
+    position:absolute;
+    left: 17%;top:15.5%;
+}
+
+.smallOla:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallOla>img{
+    width: 80%;
+}
+.bigOla{
+    display: none;
+    position:absolute;
+    left: 15%;top:10.5%;
+}
+
+.bigOla>img{
+    width: 40%;
+    
+}
+
+
+.smallMartynas{
+    display: block;
+    position:absolute;
+    left: 59%;top:25%;
+}
+
+.smallMartynas:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallMartynas>img{
+    width: 80%;
+}
+.bigMartynas{
+    display: none;
+    position:absolute;
+    left: 58%;top:20%;
+}
+
+.bigMartynas>img{
+    width: 40%;
+    
+}
+
+
+.smallMorta{
+    display: block;
+    position:absolute;
+    left: 57.5%;top:25.5%;
+}
+
+.smallMorta:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallMorta>img{
+    width: 80%;
+}
+.bigMorta{
+    display: none;
+    position:absolute;
+    left: 54%;top:22%;
+}
+
+.bigMorta>img{
+    width: 40%;
+    
+}
+
+
+.smallAusra{
+    display: block;
+    position:absolute;
+    left: 41%;top:27%;
+}
+
+.smallAusra:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallAusra>img{
+    width: 80%;
+}
+.bigAusra{
+    display: none;
+    position:absolute;
+    left: 41%;top:22%;
+    z-index: 100;
+}
+
+.bigAusra>img{
+    width: 40%;
+    
+}
+
+.smallJeanne{
+    display: block;
+    position:absolute;
+    left: 40%;top:27.2%;
+}
+
+.smallJeanne:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallJeanne>img{
+    width: 80%;
+}
+.bigJeanne{
+    display: none;
+    position:absolute;
+    left: 38%;top:23%;
+}
+
+.bigJeanne>img{
+    width: 40%;
+    
+}
+
+.smallHenrique{
+    display: block;
+    position:absolute;
+    left: 37%;top:28.5%;
+}
+
+.smallHenrique:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallHenrique>img{
+    width: 80%;
+}
+.bigHenrique{
+    display: none;
+    position:absolute;
+    left: 34%;top:26%;
+    z-index: 100;
+}
+
+.bigHenrique>img{
+    width: 40%;
+    
+}
+
+.smallJoy{
+    display: block;
+    position:absolute;
+    left: 34.8%;top:26.8%;
+}
+
+.smallJoy:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallJoy>img{
+    width: 80%;
+}
+.bigJoy{
+    display: none;
+    position:absolute;
+    left: 34%;top:26%;
+    z-index: 100;
+}
+
+.bigJoy>img{
+    width: 40%;
+    
+}
+
+.smallMahdie{
+    display: block;
+    position:absolute;
+    left: 9%;top:69.5%;
+}
+
+.smallMahdie:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallMahdie>img{
+    width: 80%;
+}
+.bigMahdie{
+    display: none;
+    position:absolute;
+    left: 8%;top:66%;
+    z-index: 100;
+}
+
+.bigMahdie>img{
+    width: 40%;
+    
+}
+
+.smallShrips{
+    display: block;
+    position:absolute;
+    left: 28%;top:77%;
+}
+
+.smallShrips:hover{
+    animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.smallShrips>img{
+    width: 80%;
+}
+.bigShrips{
+    display: none;
+    position:absolute;
+    left: 27%;top:73%;
+    z-index: 100;
+}
+
+.bigShrips>img{
+    width: 40%;
+    
+}
+
+
+.text{
+    position: relative;
+    width: 100%;
+}
+.text>#off{
+    display: block;
+    position: absolute;
+    top:10%;
+    left: 15%;
+    width: 70%;
+}
+.text>#on{
+    display: none;
+    position: absolute;
+    top:10%;
+    left: 15%;
+    width: 70%;
+}
+
+.text>p{
+    position: absolute;
+    top: 16em;
+    left: 42%;
+   
+}
+
+.text>p>#manifestoButtonWhite{
+    font-size: 1.5em;
+    display: block;
+    color: red;
+    text-align: center;
+    background-color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+.text>p>#manifestoButtonBlue{
+    font-size: 1.5em;
+    display: none;
+    color: red;
+    text-align: center;
+    background-color: blue;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+
+
+.text>p>#manifestoButtonWhite:hover{
+    background-color: blue;
+    border: 1px solid white;
+}
+
+.text>p>#manifestoButtonBlue:hover{
+    background-color: white;
+    border: 1px solid blue;
+}
+
+
+/* .transition-1{
+    content: ' ';
+    display: block;
+    position: fixed;
+    top:0;
+    width: 100%;
+    right: -100%;
+    bottom: 0;
+    z-index: 101;
+    background-image: url('../images/noiseeee.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    animation: noise .5s steps(10) infinite;
+    opacity:0.1; 
+    transition: 0.5s ease-in; 
+ }
+
+@keyframes noise {
+    0% { background-position: 0 0;}
+    50% { background-position: 100% 100% }
+}
+.transition-1.is-active{
+    right: 0px;
+    opacity: 0.8;
+ pointer-events: all; 
+ }   */
