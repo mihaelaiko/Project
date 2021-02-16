@@ -217,7 +217,55 @@ main>.background{
     
    
 }
-.mapContainer>p{
+.textContainer{
+    top: 0.1em;
+        height: 2.5em;
+        position: relative;
+        max-width: 100vw;
+     
+        overflow: hidden;
+       
+      
+    }
+    
+.textMap{
+        
+        position: relative;
+        color: black;
+        font-size: 1em;
+       
+        display: flex;
+        width: 100%;
+    }
+
+.textMap>p{
+   
+    width: 250%;
+    position: absolute;
+    font-size: 1em;
+    
+    transform:translateX(100%);
+    animation: moving 50s linear infinite;
+    color: blue;
+  
+    
+}
+
+
+ 
+
+  @keyframes moving{
+      0%{
+          transform: translateX(0%);
+        }
+    100%{
+        transform: translateX(-50%);
+        }
+  } 
+
+
+
+/* .mapContainer>p{
     position: absolute;
     top: 1.5em;left: 1em;
     
@@ -227,7 +275,7 @@ main>.background{
     overflow: hidden;
   
    
-}
+} */
 
 .mapContainer>.europe{
     position: absolute;
@@ -346,6 +394,7 @@ main>.background{
 }
 
 .smallRali{
+    width: 4%;
     display: block;
     position:absolute;
     left: 55%;top:32%;
@@ -363,11 +412,11 @@ main>.background{
 .bigRali{
     display: none;
     position:absolute;
-    left: 54%;top:28%;
+    left: 53%;top:28%;
 }
 
 .bigRali>img{
-    width: 40%;
+    width: 42%;
     
 }
 
