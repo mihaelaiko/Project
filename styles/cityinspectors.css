@@ -355,11 +355,11 @@ main>.background{
 .bigThomas{
     display: none;
     position:absolute;
-    left: 45%;top:21%;
+    left: 45%;top:20%;
 }
 
 .bigThomas>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -385,11 +385,11 @@ main>.background{
 .bigJanpng{
     display: none;
     position:absolute;
-    left: 34%;top:20%;
+    left: 32%;top:20%;
 }
 
 .bigJanpng>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -412,11 +412,11 @@ main>.background{
 .bigRali{
     display: none;
     position:absolute;
-    left: 53%;top:28%;
+    left: 50%;top:26%;
 }
 
 .bigRali>img{
-    width: 42%;
+    width: 55%;
     
 }
 
@@ -438,11 +438,11 @@ main>.background{
 .bigMariana{
     display: none;
     position:absolute;
-    left: 23%;top:29%;
+    left: 20%;top:27%;
 }
 
 .bigMariana>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -464,11 +464,11 @@ main>.background{
 .bigOla{
     display: none;
     position:absolute;
-    left: 15%;top:10.5%;
+    left: 14%;top:8%;
 }
 
 .bigOla>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -495,7 +495,7 @@ main>.background{
 }
 
 .bigMartynas>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -518,11 +518,12 @@ main>.background{
 .bigMorta{
     display: none;
     position:absolute;
-    left: 54%;top:22%;
+    left: 51%;top:20%;
 }
 
 .bigMorta>img{
-    width: 40%;
+    width: 55%;
+   
     
 }
 
@@ -545,12 +546,12 @@ main>.background{
 .bigAusra{
     display: none;
     position:absolute;
-    left: 41%;top:22%;
+    left: 41%;top:20%;
     z-index: 100;
 }
 
 .bigAusra>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -572,11 +573,11 @@ main>.background{
 .bigJeanne{
     display: none;
     position:absolute;
-    left: 38%;top:23%;
+    left: 38%;top:21%;
 }
 
 .bigJeanne>img{
-    width: 40%;
+    width:55%;
     
 }
 
@@ -598,12 +599,12 @@ main>.background{
 .bigHenrique{
     display: none;
     position:absolute;
-    left: 34%;top:26%;
+    left: 32%;top:27%;
     z-index: 100;
 }
 
 .bigHenrique>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -625,12 +626,12 @@ main>.background{
 .bigJoy{
     display: none;
     position:absolute;
-    left: 34%;top:26%;
+    left: 34%;top:20%;
     z-index: 100;
 }
 
 .bigJoy>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -652,12 +653,12 @@ main>.background{
 .bigMahdie{
     display: none;
     position:absolute;
-    left: 8%;top:66%;
+    left: 7%;top:64%;
     z-index: 100;
 }
 
 .bigMahdie>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -679,12 +680,12 @@ main>.background{
 .bigShrips{
     display: none;
     position:absolute;
-    left: 27%;top:73%;
+    left: 27%;top:70%;
     z-index: 100;
 }
 
 .bigShrips>img{
-    width: 40%;
+    width: 55%;
     
 }
 
@@ -697,20 +698,20 @@ main>.background{
     display: block;
     position: absolute;
     top:10%;
-    left: 15%;
-    width: 70%;
+    left: 20%;
+    width: 60%;
 }
 .text>#on{
     display: none;
     position: absolute;
     top:10%;
-    left: 15%;
-    width: 70%;
+    left: 20%;
+    width: 60%;
 }
 
 .text>p{
     position: absolute;
-    top: 16em;
+    top: 11em;
     left: 42%;
    
 }
