@@ -11,6 +11,18 @@ body{
     
    
 }
+
+.homebutton{
+    position: relative;
+    top:1.6em;
+}
+.homebutton>a>img{
+    position: absolute;
+    left: 10%; top: 15%;
+    width: 2%;
+  z-index: 101;
+
+}
 a{
     text-decoration: none;
 }

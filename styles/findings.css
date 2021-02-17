@@ -69,6 +69,17 @@ body{
     
     }
 }
+.homebutton{
+    position: relative;
+    top:1.6em;
+}
+.homebutton>a>img{
+    position: absolute;
+    left: 6%; top: 10%;
+    width: 2%;
+  z-index: 101;
+
+}
 
 #topBtn {
     display: none;
@@ -103,8 +114,8 @@ a{
 }
 .title>img{
     position: absolute;
-   width: 20%;
-   left:35%;
+   width: 24%;
+   left:32%;
   bottom:7em;
 }
 .content{
@@ -125,7 +136,7 @@ a{
     
 } 
 .backgrounds>.inspectors{
-    height:130%;
+    height:118%;
     position: absolute;
     left: 4.5%;
     width:90%;
@@ -145,6 +156,7 @@ a{
     position: absolute;
     width: 100%;
     height: 100%;
+    
     
   
     
