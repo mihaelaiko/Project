@@ -517,7 +517,7 @@ a>.hand{
         .hello{
             position: relative;
             width: 100vw;
-            top:85%;
+            top:80%;
             background-color: white;
             border:3px solid blue;
             box-sizing: border-box ;
@@ -663,8 +663,8 @@ a>.hand{
        .hand{
            
             position: absolute;
-            height: 20%;
-            left: 20%; top: 15%; bottom: 20%; right: 30%;
+            height: 15%;
+            left: 20%; top: 10%; bottom: 20%; right: 30%;
             
         }
      
