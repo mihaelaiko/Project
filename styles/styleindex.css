@@ -517,7 +517,7 @@ a>.hand{
         .hello{
             position: relative;
             width: 100vw;
-            top:75%;
+            top:80%;
             background-color: white;
             border:3px solid blue;
             box-sizing: border-box ;
@@ -660,11 +660,11 @@ a>.hand{
         nav,.about,.contacts{
             display: none; 
         }
-       .hand{
+       a>.hand{
            
             position: absolute;
-            height: 15%;
-            left: 20%;  bottom: 20%; right: 30%;
+            height: 45%;
+            left: 20%;  top: 30%; bottom: 20%; right: 30%;
             
         }
      
