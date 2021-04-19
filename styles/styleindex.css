@@ -1,11 +1,16 @@
 
 
+* {
+	box-sizing: border-box;
+    
+}
 
 body{
     margin: 0 auto;
     padding: 0;
     font-family: 'Space Mono', monospace;
     font-size: 88%;
+
     
 }
 
@@ -14,11 +19,89 @@ body{
     background-image: url('../images/1.texture.png');
     height: 100vh;
     width: 100vw;
-    background-size: 100% 100%;
+    background-size: cover;
 
 }
-
 nav{
+    
+    margin: 0 auto;
+    width:60em;
+    
+}
+nav>ul,
+nav>ul>li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    
+}
+
+nav>ul {
+	display: flex;
+    
+	
+}
+
+nav>ul>li {
+  
+   width: 10em;
+   margin-left: 5em;
+	display: flex;
+	flex: 1;
+    justify-content: space-between;
+	
+    
+}
+nav>ul>li>a {
+   
+    font-size: 1.3em;
+    text-decoration: none;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.inspectors>a{
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+}
+.inspectors>a:hover{
+    color: blue;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.backstage>a{
+    color: blue;
+    background-color: white;
+    border: 2px solid black;
+
+}
+.backstage>a:hover{
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+
+}
+.jobs>a{
+color: white;
+background-color: black;
+border: 2px solid black;
+}
+
+.jobs>a:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    }
+
+.navForHambuger{
+    display: none;
+}
+/* nav{
     position: fixed;
     height: 50%;
     left: 25%; top: 3%; bottom: 20%; right: 15%; 
@@ -41,9 +124,9 @@ nav>ul>li{
     border: 3px solid black;
     
     
-}
+} */
 
-nav>ul>.inspectors{
+/* nav>ul>.inspectors{
     color:white;
     background-color:blue;
     
@@ -110,7 +193,7 @@ nav>ul>.jobs>a:hover{
 .clearfix{
     clear: both;
     
-}
+} */
 
 .about{
     position: fixed;
@@ -120,7 +203,13 @@ nav>ul>.jobs>a:hover{
     transform:rotate(25deg)
     
 }
-
+.about>a{
+    text-decoration: none;
+}
+.about>a:hover{
+    text-decoration: underline;
+    
+}
 .about>a:visited{
     color: black;
 }
@@ -134,7 +223,12 @@ nav>ul>.jobs>a:hover{
     
     
 }
-
+.contacts>a{
+    text-decoration: none;
+}
+.contacts>a:hover{
+    text-decoration: underline;
+}
 .contacts>a:visited{
     color: black;
 }  
@@ -252,38 +346,164 @@ a>.hand{
       }
 
 
-      @media only screen and (max-width: 1300px){
+       @media only screen and (max-width: 1100px){
 
         .container{
             position: fixed;
-            background-image: url('../images/1.texture.png');
+            background-image: url('../images/1.texture.png') ;
             height: 100vh;
             width: 120vw;
             overflow: hidden;
-            background-size: 100% 100%;
+            background-size: cover;
         
         }
-
-        nav{
-            position: fixed;
-            height: 50%;
-            left: 33%; top: 3%; bottom: 20%;  
+        .navForHambuger
+        {
+          display: block;
+          width: 50px;
+          height: 50px;
+          padding: 5px;
+          
+          position: relative;
+          top: 10px;
+          left: 40px;
+          background-color: white;
+          border: 3px solid blue;
+          z-index: 1;
+          
+          -webkit-user-select: none;
+          user-select: none;
         }
-
-        nav>ul>li{
-            text-align: center;
-            padding: 0 0.1em;
-             float: left;
-             margin-right: 2.7em;
-             font-size: 1.5em;
-             border: 3px solid black;
-             
-             
-         }
+        
+        .navForHambuger a
+        {
+          text-decoration: none;
+          color: black;
+          
+          transition: color 0.3s ease;
+        }
+        
+        .navForHambuger a:hover
+        {
+          color: blue;
+        }
+        
+        
+        .navForHambuger input
+        {
+          display: block;
+          width: 40px;
+          height: 32px;
+          position: absolute;
+          top: -7px;
+          left: -5px;
+          
+          cursor: pointer;
+          
+          opacity: 0; 
+          z-index: 2; 
+          
+          -webkit-touch-callout: none;
+        }
+        
+       
+         .navForHambuger span
+        {
+          display: block;
+          width: 33px;
+          height: 4px;
+          margin-left: 1px;
+          margin-top: 6px;
+          margin-bottom: 3px;
+          position: relative;
+         
+          background: black;
+          border-radius: 3px;
+          
+          z-index: 1;
+          
+          transform-origin: 4px 0px;
+          
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      opacity 0.55s ease;
+        }
+        
+        .navForHambuger span:first-child
+        {
+          transform-origin: 0% 0%;
+        }
+        
+        .navForHambuger span:nth-last-child(2)
+        {
+          transform-origin: 0% 100%;
+        }
+        
+        
+         .navForHambuger input:checked ~ span
+        {
+          opacity: 1;
+          transform: rotate(45deg) translate(-2px, -1px);
+          background: #232323;
+        }
+        
+        
+         .navForHambuger input:checked ~ span:nth-last-child(3)
+        {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        
+       
+         .navForHambuger input:checked ~ span:nth-last-child(2)
+        {
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+        
+       
+      .hambmenu
+        {
+          position: absolute;
+          width: 300px;
+          margin: -100px 0 0 -50px;
+          padding: 50px;
+          padding-top: 125px;
+          
+          background: #ededed;
+          list-style-type: none;
+          -webkit-font-smoothing: antialiased;
+          
+          transform-origin: 0% 0%;
+          transform: translate(-100%, 0);
+          
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        }
+        
+        .hambmenu li
+        {
+          padding: 10px 0;
+          font-size: 22px;
+        }
+        
+        
+         .navForHambuger input:checked ~ ul
+        {
+          transform: none;
+        }
+        nav,.about,.contacts{
+            display: none; 
+        }
+        a>.hand{
+            position: absolute;
+            height: 52%;
+            left: 35%; top: 24%; bottom: 20%; right: 30%;
+            
+        }
+     
       }
 
 
-      @media only screen and (max-width: 1285px){
+     /* @media only screen and (max-width: 1285px){
 
         .container{
             position: fixed;
@@ -386,7 +606,7 @@ a>.hand{
             left: 36%; top: 24%; bottom: 20%; right: 30%;
             
         }
-      }
+      } */
 
 
 
