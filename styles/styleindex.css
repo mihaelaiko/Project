@@ -517,7 +517,7 @@ a>.hand{
         .hello{
             position: relative;
             width: 100vw;
-            top:85%;
+            top:80%;
             background-color: white;
             border:3px solid blue;
             box-sizing: border-box ;
