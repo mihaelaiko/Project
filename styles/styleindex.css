@@ -496,13 +496,13 @@ a>.hand{
         a>.hand{
             position: absolute;
             height:50%;
-            left: 30%; top: 24%; bottom: 20%; right: 30%;
+            left: 35%; top: 24%; bottom: 20%; right: 30%;
             
         }
      
       }
 
-      @media only screen and (max-width: 500px){
+      @media only screen and (max-width: 520px){
 
         .container{
             position: fixed;
@@ -517,7 +517,7 @@ a>.hand{
         .hello{
             position: relative;
             width: 100vw;
-            top:80%;
+            top:85%;
             background-color: white;
             border:3px solid blue;
             box-sizing: border-box ;
@@ -663,8 +663,8 @@ a>.hand{
        a>.hand{
            
             position: absolute;
-            height: 45%;
-            left: 20%;  top: 30%; bottom: 20%; right: 30%;
+            height: 50%;
+            left: 30%;  top: 20%; bottom: 20%; right: 30%;
             
         }
      
